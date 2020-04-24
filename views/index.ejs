@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <script src="node_modules/xterm/lib/xterm.js"></script>
 
     <title>Joma's Starter Template for NodeJs Web App</title>
 
@@ -21,6 +23,12 @@
   </head>
 
   <body>
+  <div id="terminal"></div>
+      <script>
+        var term = new Terminal();
+        term.open(document.getElementById('terminal'));
+        term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ')
+      </script>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
