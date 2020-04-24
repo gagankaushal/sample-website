@@ -1,1 +1,3 @@
-web: node index.js, npm install xterm
+web: npm install xterm
+web: node index.js
+
